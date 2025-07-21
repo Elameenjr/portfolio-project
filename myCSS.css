@@ -1,133 +1,173 @@
+/* General body styling */
+body {
+    background-color: #f3eeee;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul li {
+    float: left;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+ul li a:hover, ul li a.active {
+    background-color: #555;
 }
 
-li {
-  float: left;
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* Headings and intro */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #222;
+}
+.intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+/* Button styles */
+.button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-.hero{
-  margin-top: 50px;
-}
-ody{
-background-color: blueviolet;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: Grey;
+.button:hover {
+    background-color: #555;
 }
 
-
-li {
-  float: left;
+/* Section styles */
+section {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+h2 {
+    border-bottom: 3px solid #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 0;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* Skills list */
+ol {
+    padding-left: 20px;
+}
+ol li {
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background: #fafafa;
+    font-size: 1em;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color:black ;
+/* Footer styles */
+.footer-content {
+    margin-top: 30px;
 }
-.hero{
-  margin-top: 50px;
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.2s;
 }
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 0.95em;
+}
+        /* 60% Dominant - Light Grey */
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
 
-  .button {
-      display: inline-block;
-      border-radius: 4px;
-      background-color: grey;
-      border: none;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 28px;
-      padding: 5px;
-      width: 200px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px; 
+        /* 30% Secondary - Dark Blue */
+        .bg-dark, .navbar-dark .navbar-nav .nav-link.active, .card-title {
+            background-color: #002b5c !important;
+            color: #ffffff !important;
+        }
 
-    }
-    
-    .button span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-    
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-    
-    .button:hover span {
-      padding-right: 25px;
-    }
-    
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-    .footer {
-      background-color:#f8f8f8;
-      text-align: center;
-      padding: relative;
-      bottom: 5;
-      width: 100%;
-    }
-    .footer-content{
-      margin-bottom: 10px;
-    }
-    .footer-icon:hover{
-      opacity: 0.7;
-      
-    }
-    footer a {
-      text-decoration: none;
-    }
-    footer a img{
-      display: inline-block;
-    }
-    footer a img
-    { 
-      width:30px;    
-      height: 30px;
+        .navbar-dark .navbar-nav .nav-link {
+            color: #cfd8dc !important;
+        }
 
-    }
-  footer a:hover img{
-      opacity: 0.8;
-  }
-  footer div{
-      color: #000;
-      font-size: 14px;
-  }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffffff !important;
+        }
+
+        /* 10% Accent - Teal */
+        .btn-primary {
+            background-color: #20c997;
+            border-color: #20c997;
+        }
+
+        .btn-primary:hover {
+            background-color: #17a589;
+            border-color: #17a589;
+        }
+
+        .footer-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: none;
+        }
+
+        .hero-image {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
